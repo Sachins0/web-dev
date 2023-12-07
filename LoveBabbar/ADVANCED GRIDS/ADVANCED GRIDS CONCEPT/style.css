@@ -1,0 +1,28 @@
+.container{
+    background-color: yellow;
+    border: 2px solid black;
+    height: 500px;
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-auto-rows:minmax(3,auto);
+    grid-template-areas: "hd hd hd hd hd hd hd"
+    "sd main main main main main main"
+    "ft ft ft ft ft ft ft";
+}
+.box{
+    border: 2px solid black;
+    background: aqua;
+}
+#box1{
+    grid-area: hd;
+}
+#box2{
+    grid-area: sd;
+}
+#box3{
+    grid-area: main;
+}
+#box4{
+    grid-area: ft;
+}

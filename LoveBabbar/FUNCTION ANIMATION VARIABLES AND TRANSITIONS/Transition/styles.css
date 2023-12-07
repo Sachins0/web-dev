@@ -1,0 +1,22 @@
+.container{
+    background: aqua;
+    height: 20em;
+    width: 25em;
+    border: 2px solid black;
+}
+.box{
+    border: 2px solid red;
+    background-color: yellowgreen;
+    height: 10em;
+    width: 10em;
+    margin: 2em;
+    /* transition-delay: 1s;
+    transition-timing-function: ease-out;
+    transition-property: all;
+    transition-duration: 2s; */
+    transition: all 2s cubic-bezier(0.61,-0.54, 1, 0.05) 1s;
+}
+.box:hover{
+    background-color: blueviolet;
+    transform: translateX(30em);
+}

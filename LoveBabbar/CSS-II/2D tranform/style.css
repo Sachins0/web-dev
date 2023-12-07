@@ -1,0 +1,21 @@
+div{
+    border: 2px solid black;
+    margin: 30px;
+    height: 80px;
+    background-color: aqua;
+}
+.box2{
+    transform: translate(200px,20px);
+}
+.box3{
+    transform: rotate(180deg);
+}
+.box4{
+    transform: scale(0.5,0.5);
+}
+.box5{
+    transform: skew(40deg);
+}
+.box6{
+    transform: matrix(1,0.5,0,1,8,90);
+}

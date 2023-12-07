@@ -1,0 +1,29 @@
+.container{
+    border: 2px solid black;
+    height: 200px;
+     display: flex;
+}
+.box{
+    border: 2px solid red;
+    background-color: rgb(105, 245, 245);
+    width: 100px;
+     flex-basis: 100px;
+     
+
+    
+}
+#box-1{
+    
+    /* flex-grow: 0.4; */
+     order:1;
+}
+#box-2{
+    /* flex-shrink: 4; */
+    /* order: 7; */
+    align-self: flex-end;
+}
+#box-3{
+    /* flex-shrink: 2; */
+    /* order: 7; */
+    flex:5 0 1px;
+}

@@ -1,0 +1,10 @@
+.div1{
+    border: 2px solid black;
+    max-height: 100px;
+    overflow: auto;
+}
+.div2{
+    margin: 20px;
+    border: 2px solid black;
+    min-height: 100px;
+}

@@ -1,0 +1,16 @@
+div{
+    border: 2px solid black;
+    margin: 30px;
+    height: 80px;
+    background-color: aqua;
+}
+.box2{
+    transform: perspective(20px) translateZ(-20px);
+    
+}
+.box3{
+    transform: rotateZ(180deg);
+}
+.box4{
+    transform: perspective(200px) scaleZ(7) rotateX(1deg) rotateY(1deg);
+}

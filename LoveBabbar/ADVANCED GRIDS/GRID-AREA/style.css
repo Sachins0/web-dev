@@ -1,0 +1,16 @@
+.container{
+    background-color: yellow;
+    border: 2px solid black;
+    height: 500px;
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.box{
+    border: 2px solid black;
+    background: aqua;
+}
+#box1{
+    grid-area: 1/1/4/4;
+}

@@ -1,0 +1,11 @@
+.box{
+    text-shadow: 3px 3px 3px red,5px 5px 5px green;
+}
+.box2{
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aqua;
+    box-shadow: inset 3px 3px 3px 3px rgba(0,0,255,.6);
+}

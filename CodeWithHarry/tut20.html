@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+             box-sizing: border-box;
+             margin: 0px;
+             padding: 0px;
+        }
+        body{
+            background-color: #265948;
+        }
+        .container{
+            background-color: #c0e5d8;
+            border: 5px solid #dd5a71;
+            /* padding: 80px; */
+
+            /* we can set padding/margin for top,bottom,left,right like this */
+            /* padding-top: 10px;
+            padding-left: 8px; */
+
+            /*padding=top right bottom left*/
+            /* padding: 20px 30px 40px 50px; */
+
+            /* padding=y(top/bottom) x(left/right) */
+            padding: 30px 40px;
+
+
+            /* margin: 40px; */
+
+            /* margin-bottom: 20px;
+            margin-left: 30px; */
+
+            margin: 14px 19px;
+
+            border-radius: 20px;
+            width: 530px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto mollitia voluptate cupiditate numquam. Aliquam officiis autem dignissimos, quia natus in at eaque tempora.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto mollitia voluptate cupiditate numquam. Aliquam officiis autem dignissimos, quia natus in at eaque tempora.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto mollitia voluptate cupiditate numquam. Aliquam officiis autem dignissimos, quia natus in at eaque tempora.</p>
+    </div>
+    
+</body>
+</html>
