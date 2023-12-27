@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+
+}
+body{
+    background: #a09f9f;
+}
+section{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
