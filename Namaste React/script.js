@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client"
 const heading=React.createElement(
     "h1",
     {id:"heading"},
-    "react by akshay saini"
+    "Hello world from react by akshay saini"
     );
 //     console.log(heading);//object
 const root=ReactDOM.createRoot(document.getElementById("root"));
