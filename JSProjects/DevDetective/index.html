@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕵DevDetective</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="top-container">
+                <h1 class="heading">🕵 DevDetective</h1>
+                <button class="modeBtn">
+                    <h3 class="modeText"></h3>
+                    <img class="modeImg">
+                </button>
+            </div>
+
+            <div class="descContainer">
+
+            <div class="search-container">
+                <input class="input" placeholder="Enter a GitHub username">
+                <p class="notFoundText"></p>
+                <button class="searchBtn">Search</button>
+            </div>
+
+            <div class="card-container">
+                <div class="cardTop">
+                <div class="image-container">
+                    <img class="dpImg">
+                </div>
+
+                    <div class="name-info">
+                        <div class="profileName">
+                            <h1 class="name"></h1>
+                            <a class="link gitLink"></a>
+                        </div>
+                        <span class="joined"></span>
+                    </div>
+
+                </div>
+
+                    <p class="desc"></p>
+
+                    <div class="githubInfo">
+                        <table class="table">
+                            <tr class="tableHead">
+                                <td>Repos</td>
+                                <td>Followers</td>
+                                <td>Following</td>
+                            </tr>
+                            <tr class="tableContent">
+                                <td class="tableInfo repoCount"></td>
+                                <td class="tableInfo followersCount"></td>
+                                <td class="tableInfo followingCount"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="bottom-container">
+                        <div class="location">
+                            <img src="./Images/location-icon.svg">
+                            <p class="locn"></p>
+                        </div>
+
+                        <div class="bioLink">
+                            <img src="./Images/website-icon.svg">
+                            <a class="link website"></a>
+                        </div>
+
+                        <div class="twitterLink">
+                            <img src="./Images/twitter-icon.svg">
+                            <a class="link twitter"></a>
+                        </div>
+
+                        <div class="company">
+                            <img src="./Images/company-icon.svg">
+                            <p class="companyInfo"></p>
+                        </div>
+
+                    </div>
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
