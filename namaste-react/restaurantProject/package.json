@@ -1,0 +1,23 @@
+{
+  "name": "restaurantproject",
+  "version": "1.0.0",
+  "description": "this is my first react project",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build EP1.html"
+  },
+  "author": "Sachin Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
+}
