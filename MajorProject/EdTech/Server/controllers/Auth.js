@@ -182,7 +182,7 @@ exports.login=async(req,res)=>{
         }
         //generate JWT after pwd matching 
           if(await bcrypt.compare(password,user.password)){
-            const paylaod={
+            const payload={
                 email:user.email,
                 id:user._id,
                 accountType:user.accountType,
