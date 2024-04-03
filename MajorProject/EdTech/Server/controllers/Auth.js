@@ -220,7 +220,7 @@ exports.login=async(req,res)=>{
     }
 }
 
-//change Password
+//*change Password
 exports.changePassword=async(req,res)=>{
     //get data 
     //get oldPwd,newPwd,confirmnewpwd
