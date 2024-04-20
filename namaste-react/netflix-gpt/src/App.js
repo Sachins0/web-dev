@@ -1,9 +1,8 @@
-import './App.css';
+import Body from './Components/Body';
 
 function App() {
   return (
-    <div className="text-3xl text-[#DB4444]">Hi Hello
-    </div>
+    <Body/>
   );
 }
 
