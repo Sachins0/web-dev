@@ -47,9 +47,9 @@ const Header = () => {
 
 
   return (
-    <div className='absolute p-5 bg-gradient-to-b from-black z-10 w-screen flex-col md:flex-row justify-between '>
+    <div className='absolute p-5 bg-gradient-to-b from-black z-10 w-screen flex flex-col md:flex-row justify-between '>
         <img className='w-[148px] mx-auto md:mx-0' src={LOGO_URL} alt='logo'/>
-        {user && (<div className='flex h-9 justify-between'>
+        {user && (<div className='flex h-9 justify-between gap-2'>
         {showGPTSearch && (<select className='h-12 p-2 bg-gray-900 text-white' onChange={handleLanguageChange}>
         {
           SUPPORTED_LANGUAGE.map((lang)=>(

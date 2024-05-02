@@ -22,7 +22,6 @@ const GPTSearchBar = () => {
     }
 
     const handleGPTSearchClick=async()=>{
-        console.log(searchText.current.value);
         //make an API cal to GPT API and get result
 
         const gptQuery="Act as a Movie Recommendation system and give some movie names for query in comma separatad format ,For exmaple:Gadar,Don,Avengers"+searchText.current.value
@@ -31,15 +30,14 @@ const GPTSearchBar = () => {
               messages: [{ role: 'user', content: gptQuery }],
               model: 'gpt-3.5-turbo',
             });
-            console.log(gptResults.choices?.[0].message?.content);
 
             const gptMovies=gptResults.choices?.[0].message?.content.split(",")
+
+            console.log(gptMovies);
 
             const promiseArray=gptMovies.map(movie=>searchMovieTMDB(movie))
 
             const tmdbResults=await Promise.all(promiseArray)
-            console.log(tmdbResults );
-
             dispatch(addGPTMovieResult({movieName:gptMovies,movieResults:tmdbResults}))
 
     }
