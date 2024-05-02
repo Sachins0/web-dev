@@ -8,8 +8,18 @@ export const API_OPTIONS={
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlODlhMzRkMDJkZTNhMmU2ZWVmMzkwMjAxY2M0NzE5OSIsInN1YiI6IjY2MmU2MmUyZDk2YzNjMDEyYTk4YjI0ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3P4xkX-uCWSasBVYnXJBKaxw2tZu0LpR1s0b1Q96MJ8'
+      Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY
     }
   };
 
 export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500/"
+
+export const SUPPORTED_LANGUAGE=[
+  {
+    identifier:"en",name:"English",
+  },
+  {identifier:"hindi",name:"Hindi"},
+  {identifier:"bhojpuri",name:"Bhojpuri"}
+] 
+
+export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY
