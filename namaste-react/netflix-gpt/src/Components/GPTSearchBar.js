@@ -15,7 +15,7 @@ const GPTSearchBar = () => {
 
     //search movie in TMDB
     const searchMovieTMDB=async(movie)=>{
-        const data=await fetch('https://api.themoviedb.org/3/search/movie?query='+movie+'include_adult=false&language=en-US&page=1', API_OPTIONS)
+        const data=await fetch('https://api.themoviedb.org/3/search/movie?query='+movie+'&include_adult=false&page=1', API_OPTIONS)
         const json=await data.json()
 
         return json.results
@@ -24,7 +24,7 @@ const GPTSearchBar = () => {
     const handleGPTSearchClick=async()=>{
         //make an API cal to GPT API and get result
 
-        const gptQuery="Act as a Movie Recommendation system and give some movie names for query in comma separatad format ,For exmaple:Gadar,Don,Avengers"+searchText.current.value
+        const gptQuery="Act as a Movie Recommendation system and give some movie names atleast five for query in comma separatad format ,For exmaple:Gadar,Don,Avengers"+searchText.current.value
 
             const gptResults = await openai.chat.completions.create({
               messages: [{ role: 'user', content: gptQuery }],
@@ -33,7 +33,6 @@ const GPTSearchBar = () => {
 
             const gptMovies=gptResults.choices?.[0].message?.content.split(",")
 
-            console.log(gptMovies);
 
             const promiseArray=gptMovies.map(movie=>searchMovieTMDB(movie))
 
