@@ -107,7 +107,7 @@ const loginUser = asyncHandler(async (req, res) =>{
     //send cookie
 
     const {email, username, password} = req.body
-    console.log(email);
+    console.log("email",email);
 
     if (!username && !email) {
         throw new ApiError(400, "username or email is required")
@@ -399,6 +399,7 @@ const getUserChannelProfile=asyncHandler(async(req,res)=>{
             }
         }
     ])
+    console.log("channel",channel);
 
     if(!channel?.length){
         throw new ApiError(404,"channel does not exists")
@@ -431,7 +432,7 @@ const getWatchHistory=asyncHandler(async(req,res)=>{
                             localField:"owner",
                             foreignField:"_id",
                             as:"owner",
-                            pipeline:[
+                            pipeline:[  //TODO: write this outside at 2nd stage and see output
                                 {
                                     $project:{
                                         fullName:1,
