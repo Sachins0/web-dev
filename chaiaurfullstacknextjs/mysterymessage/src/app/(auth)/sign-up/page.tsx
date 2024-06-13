@@ -37,7 +37,7 @@ const page = () => {
   })
 
   useEffect(()=>{
-    const checkUsernemUnique=async()=>{
+    const checkUsernameUnique=async()=>{
       if(username){
         setIsCheckingUsername(true)
         setUsernameMessage('')
@@ -49,14 +49,14 @@ const page = () => {
         } catch (error) {
           const axiosError=error as AxiosError<ApiResponse>
           setUsernameMessage(
-            axiosError.response?.data.message ?? 'error checkong username'
+            axiosError.response?.data.message ?? 'error checking username'
           )
         }finally{
           setIsCheckingUsername(false)
-        }
+        }   
       }
     }
-    checkUsernemUnique()
+    checkUsernameUnique()
   },[username])
 
   const onSubmit=async(data:z.infer<typeof signUpSchema>)=>{
