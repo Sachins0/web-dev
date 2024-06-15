@@ -77,9 +77,6 @@ const MessageCard = ({message,onMessageDelete}:MessageCardProps) => {
       </AlertDialogContent>
     </AlertDialog>
     </div>
-    <div className="text-sm">
-          {/* {dayjs(message.createdAt).format('MMM D, YYYY h:mm A')} */}
-        </div>
     </CardHeader>
     <CardContent>
     </CardContent>
