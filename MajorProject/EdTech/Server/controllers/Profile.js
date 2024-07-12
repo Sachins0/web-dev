@@ -19,14 +19,19 @@ exports.updateProfile = async (req, res) => {
     } = req.body
     const id = req.user.id
 
+    // console.log("dateOfBirth",dateOfBirth);
+
     // Find the profile by id
     const userDetails = await User.findById(id)
+
     const profile = await Profile.findById(userDetails.additionalDetails)
+
 
     const user = await User.findByIdAndUpdate(id, {
       firstName,
       lastName,
     })
+
     await user.save()
 
     // Update the profile fields

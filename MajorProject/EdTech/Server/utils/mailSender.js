@@ -2,7 +2,7 @@ const nodemailer=require("nodemailer")
 
 const mailSender=async(email,title,body)=>{
     try{
-        let transporter=nodemailer.createTransporter({
+        let transporter=nodemailer.createTransport({
             host:process.env.MAIL_HOST,
             auth:{
                 user:process.env.MAIL_USER,
@@ -10,17 +10,17 @@ const mailSender=async(email,title,body)=>{
             }
         })
 
-        let info=await transporter.sendmail({
+        let info=await transporter.sendMail({
             from:'XamMan || Sachin Singh',
             to:`${email}`,
             subject:`${title}`,
             html:`${body}`,
         })
-        console.log(info);
+        console.log("info",info);
         return info
     }
     catch(error){
-        console.log(error.message);
+        console.log("error",error.message);
     }
 }
 
